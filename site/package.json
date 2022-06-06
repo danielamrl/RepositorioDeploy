@@ -6,8 +6,6 @@
   "scripts": {
     "start": "node ./site/app.js",
     "pastinstall": "cd site && npm install",
-    "dev": "nodemon --exec node ./site/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Feito pelos desenvolvedores @ Bandtec Digital School",
   "license": "MIT",
