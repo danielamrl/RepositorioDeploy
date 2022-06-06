@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/logs.css">
+    <link rel="stylesheet" href="./css/mediaqueries-logs.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic"
+        rel="stylesheet" />
+    <title>Logs | Observium</title>
+</head>
+
+<body>
+    <div class="side-bar">
+        <div class="container">
+            <div class="boxes" id="boxes_logo">
+                <div class="box">
+                    <img src="assets/imgs/Logo_Observium_Quadrado.png" class="icon" alt="">
+                </div>
+            </div>
+
+            <div class="boxes" id="boxes_links">
+                <a class="box" href="tela_maquinas.html">
+                    <img src="assets/imgs/imac.png" class="icon" alt="">
+                </a>
+                <a class="box" href="dashboard.html">
+                    <img src="assets/imgs/graphic-arrow.png" class="icon" alt="">
+                </a>
+                <a class="box" id="box_selected" href="tela_logs.html">
+                    <img src="assets/imgs/files.png" class="icon" alt="">
+                </a>
+            </div>
+
+            <div class="boxes" id="boxes_logout">
+                <a class="box">
+                    <img src="assets/imgs/logout.png" alt="" class="icon" onclick="fnDeslogar()">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <div class="data">
+                <div class="dataItems">
+                <div class="dataBox">
+                    <h3 class="text">Selecione uma data:</h3>
+                    <input type="date" id="input_dataInicial">
+                    <input type="time" id="input_tempoInicial">
+                    <input type="date" id="input_dataFinal">
+                    <input type="time" id="input_tempoFinal">
+                    <button id="btnFiltro">OK</button>
+                </div>
+                <a href="#" id="ancoraGerarRelatorio">Gerar relatório</a>
+            </div>
+            </div>
+
+            <div class="conteudo-logs">
+                <div class="cabecalho-logs">
+                    <b class="text">Data</b>
+                    <b class="text">CPU</b>
+                    <b class="text">RAM</b>
+                    <b class="text">Disco</b>
+                    <b class="text">Máquina</b>
+                    <b class="text">Descrição</b>
+                </div>
+
+                <div class="banner-logs" id="logs">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="js/backendTelaDeLogs.js"></script>
+
+<script type="text/javascript">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"c9a263cd399a72bf5e41f7e24c731be220c5742fdb1fdfad20811315917c512a", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");</script>

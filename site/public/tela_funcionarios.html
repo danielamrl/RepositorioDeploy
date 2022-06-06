@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/funcionarios.css">
+    <link rel="stylesheet" href="./css/mediaqueries-funcionarios.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic"
+        rel="stylesheet" />
+    <title>Usuários | Observium</title>
+</head>
+
+<body>
+    <div class="side-bar">
+        <div class="container">
+            <div class="boxes" id="boxes_logo">
+                <div class="box">
+                    <img src="assets/imgs/Logo_Observium_Quadrado.png" alt="">
+                </div>
+            </div>
+
+            <div class="boxes" id="boxes_links">
+                <a class="box" href="tela_maquinas.html">
+                    <img src="assets/imgs/imac.png" alt="">
+                </a>
+                <a class="box" href="dashboard.html">
+                    <img src="assets/imgs/graphic-arrow.png" alt="">
+                </a>
+                <a class="box" href="tela_logs.html">
+                    <img src="assets/imgs/files.png" alt="">
+                </a>
+            </div>
+
+            <div class="boxes" id="boxes_logout">
+                <a class="box">
+                    <img src="assets/imgs/logout.png" alt="" onclick="fnDeslogar()">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+
+        <div class="container" id="container">
+            <div class="lista">
+                <div class="pesquisa">
+                    <input type="text" class="realcePesquisa" id="pesquisa" placeholder="Ex: Atauine Dias">
+                    <button type="submit" class="botaoPesquisa">
+                        Pesquisar
+                    </button>
+
+                </div>
+                <div class="btn_add_user" onclick="window.location.replace('#add_modal')">
+
+                </div>
+            </div>
+
+            <div class="conteudo-users">
+                <div class="cabecalho-users">
+                    <b class="text">Nome</b>
+                    <b class="text">Login</b>
+                    <b class="text">E-mail</b>
+                    <b class="text">Setor</b>
+                    <b class="text">Tipo</b>
+                </div>
+
+                <div class="banner-users" id="users">
+
+                </div>
+            </div>
+        </div>
+        <div class="add_modal" id="add_modal">
+            <div class="content_add_modal">
+                <a href="#" class="btn_fechar_add_modal">X</a>
+
+                <b>Cadastrar Novos Usuários</b>
+
+                <div class="cadastroConteudo">
+                    <b>Nome</b>
+                    <input id="nomeUser" type="text">
+                </div>
+
+                <div class="cadastroConteudo">
+                    <b>Setor</b>
+                    <input id="setorUser" type="text">
+                </div>
+
+                <div class="cadastroConteudo">
+                    <b>Tipo De Usuário</b>
+                    <select name="tatu" id="tipoUsuario">
+                        <option value="0">--Selecione--</option>
+                        <option value="admin">Administrador</option>
+                        <option value="Comum">Comum</option>
+                    </select>
+                </div>
+
+                <div class="cadastroConteudo">
+                    <b>Login</b>
+                    <input id="loginUser" type="text">
+                </div>
+
+                <div class="cadastroConteudo">
+                    <b>Email</b>
+                    <input id="emailUser" type="text">
+                </div>
+
+                <div class="cadastroConteudo">
+                    <b>Senha</b>
+                    <input id="senhaUser" type="password">
+                </div>
+
+                <div class="cadastroConteudo">
+                    <b>Confirmação De Senha</b>
+                    <input id="confirmacaoSenhaUser" type="password">
+                </div>
+
+                <div class="cadastroConteudo">
+                    <Button onclick="cadastrar()">Cadastrar</Button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
+<script src="js/backendTelaUsuarios.js"></script>
+<script type="text/javascript">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"c9a263cd399a72bf5e41f7e24c731be220c5742fdb1fdfad20811315917c512a", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");</script>

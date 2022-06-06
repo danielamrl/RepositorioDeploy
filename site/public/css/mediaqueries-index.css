@@ -1,0 +1,763 @@
+@media (min-width: 280px) and (max-width: 767px) {
+
+    body {
+        min-height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+      }
+
+    header {
+        width: 100vw;
+        height: 10vh;
+        justify-content: center;
+    }
+    
+
+    .nav-branding {
+        font-size: 2rem;
+        padding-left: 0%;    
+    }
+
+    .logo-observium {
+
+        width: 30%;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+
+    .banner .first-text {
+
+        font-size: 70%;
+    }
+
+    .banner {
+        height: 45vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .banner .container {
+        height: 100%;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5vw;
+    }
+
+    .banner .first-text {
+
+        font-size: 60%;
+        margin-bottom: 0%;
+    }
+
+    .banner .sub-text {
+
+        font-size: 100%;
+        width: 90%;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .sobre-nos {
+
+        height:50vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    }
+
+    .text-titulo {
+        font-size: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards {
+        width: 85%;
+        height: 60%;
+        margin-left: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    }
+
+    .flipper-container {
+
+        perspective: 100vh;
+        width: 32%;
+        height: 60%;
+        perspective: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .produto {
+
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .boxes2 {
+
+        display: none;
+    }
+
+    .produto .container {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .produto .container .boxes {
+
+        width: 100%;
+        height: 100%;
+        margin-left: 0%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .boxes .box {
+
+        width: 90%;
+        border-radius: 0%;
+        padding: 0%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxes .box h1 {
+        font-size: 150%;
+
+    }
+
+    .boxes .box p {
+        text-align: center;
+        font-size: 90%;
+    }
+
+    .linha1 {
+        margin-top: 0%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .linha1 .box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .linha1 .box .icon {
+
+        height: 25%;
+
+    }
+
+    .linha1 .box h3 {
+
+        font-size: 100%;
+    }
+
+
+    .linha1 .box p {
+
+        width: 95%;
+        font-size: 90%;
+    }
+
+    .social {
+
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .social .container .boxes {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .lower {
+
+        height: 20vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .lower .container {
+        width: 100%;
+        height: 100%;
+        font-size: 75%;
+
+    }
+
+    .lower .rodape {
+
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lower .final {
+        height: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lower .final b {
+
+        font-size: 125%;
+    }
+
+    .footer {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    body {
+
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+    }
+
+    .logo-observium {
+
+        width: 25%;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+
+    .banner .first-text {
+
+        font-size: 70%;
+    }
+
+    .banner {
+        height: 30%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .banner .container {
+        height: 100%;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5vw;
+    }
+
+    .banner .first-text {
+
+        font-size: 65%;
+        margin-bottom: 0%;
+    }
+
+    .banner .sub-text {
+
+        font-size: 100%;
+        width: 60%;
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sobre-nos {
+
+        width: 100vw;
+        height: 30%;
+
+    }
+
+    .text-titulo {
+        font-size: 100%;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        margin-bottom: 0%;
+    }
+
+    .flipper-container {
+
+        width: 100%;
+        height: 100%;
+        perspective: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .produto {
+
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .boxes2 {
+
+        display: none;
+    }
+
+    .produto .container {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .produto .container .boxes {
+
+        width: 100%;
+        height: 100%;
+        margin-left: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxes .box {
+
+        width: 100%;
+        border-radius: 0%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linha1 {
+        margin-top: 0%;
+        display: flex;
+        align-items: center;
+    }
+
+    .linha1 .box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .linha1 .box .icon {
+
+        height: 30%;
+
+    }
+
+    .linha1 .box h3 {
+
+        font-size: 100%;
+    }
+
+
+    .linha1 .box p {
+
+        width: 95%;
+        font-size: 90%;
+    }
+
+    .social {
+
+        height: 15%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .social .container {
+        width: 100%;
+    }
+
+    .lower {
+
+        height: 15%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .lower .container {
+        width: 100%;
+    }
+
+    .footer {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+@media (min-height: 280px) and (max-height: 376px) {
+
+    body {
+
+        width: 100vw;
+        height: 450vh;
+        overflow: scroll;
+    }
+
+    header {
+        height: 30vh;
+    }
+
+    .logo-observium {
+
+        width: 25%;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+
+    .banner .first-text {
+
+        font-size: 70%;
+    }
+
+    .banner {
+        height: 30%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .banner .container {
+        height: 100%;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5vw;
+    }
+
+    .banner .first-text {
+
+        font-size: 65%;
+        margin-bottom: 0%;
+    }
+
+    .banner .sub-text {
+
+        font-size: 100%;
+        width: 60%;
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sobre-nos {
+
+        width: 100vw;
+        height: 30%;
+
+    }
+
+    .text-titulo {
+        font-size: 100%;
+    }
+
+    .cards {
+       
+        width:90vw;
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 0%;
+    }
+
+    .flipper-container {
+
+        width: 20%;
+        height: 60%;
+        perspective: 100vh;
+
+    }
+
+
+    .produto {
+
+        width: 100%;
+        height: 30%;
+        margin-top: -25%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .boxes2 {
+
+        display: none;
+    }
+
+    .produto .container {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .produto .container .boxes {
+
+        width: 100%;
+        height: 100%;
+        margin-left: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxes .box {
+
+        width: 100%;
+        border-radius: 0%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linha1 {
+        margin-top: 0%;
+        display: flex;
+        align-items: center;
+    }
+
+    .linha1 .box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .linha1 .box .icon {
+
+        height: 30%;
+
+    }
+
+    .linha1 .box h3 {
+
+        font-size: 100%;
+    }
+
+
+    .linha1 .box p {
+
+        width: 95%;
+        font-size: 90%;
+    }
+
+    .social {
+
+        height: 25%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .social .container {
+        width: 100%;
+    }
+
+    .lower {
+
+        height: 15%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .lower .container {
+        width: 100%;
+    }
+
+    .footer {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+@media (min-height: 377px) and (max-height: 513px) {
+
+    header {
+        height: 30vh;
+    }
+
+    .banner {
+        height: 75%;
+
+    }
+
+    .produto {
+
+        height: 75%;
+    }
+
+    .social {
+
+        height: 40%;
+    }
+
+    .lower {
+
+        height: 40%;
+    }
+
+    .flipper-container {
+
+        width: 20%;
+        height: 90%;
+        perspective: 100vh;
+
+    }
+
+    .sobre-nos {
+
+        height: 70%;
+
+    }
+
+}
+
+@media (min-height: 400px) and (max-height: 412px) {
+
+    .hamburger {
+        display: none;
+    }
+
+}
+
+@media (min-height: 514px) and (max-height: 541px) {
+
+    header {
+        height: 20vh;
+    }
+
+   
+
+    .flipper-container {
+
+        width: 20%;
+        height: 90%;
+        perspective: 100vh;
+
+    }
+   
+
+}

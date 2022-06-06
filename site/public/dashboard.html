@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/mediaqueries-dashboard.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="navbar"></div>
+    <div class="side-bar">
+        <div class="container">
+            <div class="boxes" id="boxes_logo">
+                <div class="box">
+                    <img src="assets/imgs/Logo_Observium_Quadrado.png" alt="">
+                </div>
+            </div>
+
+            <div class="boxes" id="boxes_links" >
+                <a class="box" href="tela_maquinas.html">
+                    <img src="assets/imgs/imac.png" alt="">
+                </a>
+                <a class="box" id="box_selected" href="dashboard.html">
+                    <img src="assets/imgs/graphic-arrow.png" alt="">
+                </a>
+                <a class="box" href="tela_logs.html">
+                    <img src="assets/imgs/files.png" alt="">
+                </a>
+            </div>
+
+            <div class="boxes" id="boxes_logout">
+                <div class="box">
+                    <img src="assets/imgs/logout.png" alt="" onclick="fnDeslogar()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <!-- Filtros -->
+            <div id="filtros" class="filters">
+                <div id="maquina-windows" class="filters-box">
+                    <h3 class="text">Máquinas Windows</h3>
+                    <select onchange="selectAttGraficoW()" class="select-filter" id="select_windows">
+                    </select>
+                </div>
+
+                <div id="maquina-linux" class="filters-box">
+                    <h3 class="text">Máquinas Linux</h3>
+                    <select onchange="selectAttGraficoL()" class="select-filter" id="select_linux">
+                    </select>
+                </div>
+
+                <div class="filters-box text-titulo-maq">
+                    <h1 id="hostname_maquina" class="text text-titulo-maq"></h1>
+                </div>
+            </div>
+            <div class="text-mem">
+                <b class="text">Memória - RAM</b>
+            </div>
+            <div class="donut-graph-one">
+                <canvas id="donutChartOne" style="width:100%;max-width:90%"></canvas>
+                <div class="text-disp-mem">
+                    <b class="text" id="memDisp"></b>
+                </div>
+                <div class="text-uso-mem">
+                    <b class="text" id="memUso"></b>
+                </div>
+            </div>
+
+            <div class="text-disc">
+                <div class="disco-div">
+                    <b class="text">Disco Rígido</b>
+                    <!-- <select onchange="selectAttDisco()" id="select_discos_pc" class="select-filter"> -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="donut-graph-two">
+                <canvas id="donutChartTwo" style="width:100%;max-width:90%"></canvas>
+                <div class="text-disp-disc">
+                    <b class="text" id="discoDisp"></b>
+                </div>
+                <div class="text-uso-disc">
+                    <b class="text" id="discoUso"></b>
+                </div>
+            </div>
+
+            <div class="text-cpu">
+                <b class="text">CPU - Velocidade</b>
+            </div>
+            
+            <div class="line-graph">
+                <canvas id="lineChart" style="width:100%;max-width:92%"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="js/backendDashboard.js"></script>
+
+<script type="text/javascript">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"c9a263cd399a72bf5e41f7e24c731be220c5742fdb1fdfad20811315917c512a", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");</script>
+
