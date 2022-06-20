@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./site/app.js",
-    "pastinstall": "cd site && npm install",
+    "postinstall": "cd site && npm install",
   },
   "author": "Feito pelos desenvolvedores @ Bandtec Digital School",
   "license": "MIT",
