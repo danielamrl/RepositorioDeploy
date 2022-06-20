@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'observium'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_89B614A3AE5046D380DCC4DF99F10C84 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2F47AADB21654197BC84F815CCF89BEA }}
           package: .
